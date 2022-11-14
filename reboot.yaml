@@ -1,5 +1,5 @@
 ---
-- name: Update and reboot
+- name: reboot
   hosts: test-hosts
   gather_facts: no
   tasks:
