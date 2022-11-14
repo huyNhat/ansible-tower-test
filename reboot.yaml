@@ -1,0 +1,11 @@
+---
+- name: Update and reboot
+  hosts: test-hosts
+  gather_facts: no
+  tasks:
+    - name: Reboot server
+      reboot:
+        pre_reboot_delay: 90
+        msg: "!!!Attention, server will be rebooted in 90 seconds!!!"
+...
+
